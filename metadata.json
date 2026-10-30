@@ -1,0 +1,8 @@
+{
+  "name": "Remix APAAR SEAL - Seat Enrolment Assurance Ledger",
+  "description": "AICTE Regulatory Case-Management and Admission-Assurance Ledger prototype for institution intake compliance, APAAR verification, and dispute resolution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

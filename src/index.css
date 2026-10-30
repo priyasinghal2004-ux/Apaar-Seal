@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette - Enterprise GovTech & Regulatory SaaS */
+  --ink: #0F172A;
+  --ink-2: #334155;
+  --ink-3: #64748B;
+  --ink-4: #94A3B8;
+  
+  --paper: #F8FAFC;
+  --surface: #FFFFFF;
+  --surface-subtle: #F1F5F9;
+  --surface-hover: #F8FAFC;
+  
+  --line: #E2E8F0;
+  --line-strong: #CBD5E1;
+  --line-focus: #3B82F6;
+  
+  --navy: #0A193B;
+  --navy-dark: #07122B;
+  --navy-surface: #112552;
+  --navy-hover: #162E63;
+  --navy-border: #1E3A78;
+  
+  --saffron: #D97706;
+  --saffron-light: #FFFBEB;
+  --saffron-border: #FDE68A;
+  --saffron-dark: #B45309;
+
+  /* Modern Accessible Status Tokens */
+  --status-verified-text: #15803D;
+  --status-verified-bg: #F0FDF4;
+  --status-verified-border: #BBF7D0;
+  
+  --status-confirmed-text: #1D4ED8;
+  --status-confirmed-bg: #EFF6FF;
+  --status-confirmed-border: #BFDBFE;
+  
+  --status-pending-text: #B45309;
+  --status-pending-bg: #FFFBEB;
+  --status-pending-border: #FDE68A;
+  
+  --status-disputed-text: #B91C1C;
+  --status-disputed-bg: #FEF2F2;
+  --status-disputed-border: #FECACA;
+  
+  --status-under-review-text: #6D28D9;
+  --status-under-review-bg: #F5F3FF;
+  --status-under-review-border: #DDD6FE;
+  
+  --status-unavailable-text: #475569;
+  --status-unavailable-bg: #F1F5F9;
+  --status-unavailable-border: #E2E8F0;
+
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--ink);
+  background-color: var(--paper);
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Helpers */
+.font-sans-ui {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-mono-code {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-serif-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-feature-settings: "lnum" 1;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Elevation & Shadows */
+.shadow-subtle {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+}
+
+.shadow-card {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px 0 rgba(15, 23, 42, 0.02);
+}
+
+.shadow-elevated {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
+/* Border Helpers */
+.border-line {
+  border-color: var(--line);
+}
+.border-line-strong {
+  border-color: var(--line-strong);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink-3);
+}
+
+/* Interactive transitions */
+button, a, input, select, textarea {
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
